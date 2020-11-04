@@ -1,5 +1,6 @@
 import Search from "./search/headerSearch/search";
-
+import TabWrap from "./tabs/tabWrap";
+import Tab from "./tabs/tab";
 import logo from '../graphics/svg/logo.svg';
 import './App.css';
 
@@ -14,10 +15,10 @@ function App() {
 
       {/* <TabWrap>
         <Tab>
-          <QuickSearchOrResults />
+          Tab 1
         </Tab>
         <Tab>
-          <Journal />
+          Tab 2
         </Tab>
       </TabWrap> */}
     </div>
