@@ -1,7 +1,5 @@
 import Search from "./search/headerSearch/search";
-import TabWrap from "./tabs/tabWrap";
-import Tab from "./tabs/tab";
-import logo from '../graphics/svg/logo.svg';
+import Tabs from "./tabs/Tabs";
 import './App.css';
 
 function App() {
@@ -13,14 +11,18 @@ function App() {
 
       Hello World!
 
-      {/* <TabWrap>
-        <Tab>
-          Tab 1
-        </Tab>
-        <Tab>
-          Tab 2
-        </Tab>
-      </TabWrap> */}
+      <Tabs>
+        <Tabs.Tab label="search" />
+        <Tabs.Tab label="journal" />
+
+        
+          <Tabs.Pannel label="search">
+            search pannel
+            {/* {searchInfo !== null ? <Results /> : <Search />} */}
+          </Tabs.Pannel>
+          <Tabs.Pannel label="journal">journal pannel</Tabs.Pannel>
+       
+      </Tabs>
     </div>
   );
 }

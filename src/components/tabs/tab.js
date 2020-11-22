@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import TabContext from './TabContext';
 
-const Tab = ({children}) => {
+const Tab = ({ label, children }) => {
+  const { activeTab, handleTabClick } = React.useContext(TabContext);
+console.log(handleTabClick)
+  const tabClasses = activeTab === children ? `tab tab-active` : `tab`;
+
   return (
-    <div>
-      {children}
+    <div className={tabClasses}>
+      <button onClick={() => handleTabClick(label)}>{label}</button>
     </div>
   )
-}
-
-Tab.propTypes = {
-  children: PropTypes.object.isRequired,
 };
 
 export default Tab;

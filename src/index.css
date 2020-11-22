@@ -1,6 +1,8 @@
-html {
+:root {
   font-size: 16px;
+  --text: rgb(37, 37, 37);
 }
+
 body {
   margin: 0;
   font-family: 'Nunito', 'Helvetica Neue',
@@ -8,11 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-}
-
-/* Variables */
-:root {
-  --text: rgb(37, 37, 37);
 }
 
 /* Global element styles */
